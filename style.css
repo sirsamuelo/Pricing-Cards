@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto&display=swap');
+
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #7B3BF3;
+    --secondary-color: #313c5c;
+    --btn-color: transparent;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #1C243C;
+    color: #C6C7D1;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 10px solid var(--secondary-color);
+    border-radius: 12px;
+    margin: 1rem;
+    padding: 2rem;
+    height: 27rem;
+    position: relative;
+}
+
+.active {
+    color: #FFF;
+    border: 10px solid var(--main-color);
+}
+
+/* .card:nth-child(2) {
+    border: 10px solid var(--secondary-color);
+} */
+
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.top span {
+    text-transform: uppercase;
+    padding:0.3rem;
+}
+.top h1 {
+    font-size: 3rem;
+}
+.top small {
+    padding: 0.4rem 0;
+    font-weight: 500;
+}
+button {
+    padding: 1rem 2rem;
+    background-color: var(--btn-color);
+    margin: 1rem;
+    color: #FFF;
+    border-radius: 5px;
+    outline:none;
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+.active-btn {
+    background-color: var(--main-color);
+}
+
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.check {
+    padding: 0.3rem;
+    margin-left: 0.3rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    position: relative;
+}
+.check span {
+    padding: 0 0.2rem;
+    line-height: 25px;
+}
+
+i {
+    font-size: 25px;
+    position: absolute;
+    top: 3px;
+    left: -20px;
+}
+
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    opacity: 0.2;
+    position: absolute;
+    top: 60%;
+    left:0;
+}
